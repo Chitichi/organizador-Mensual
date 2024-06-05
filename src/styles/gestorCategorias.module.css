@@ -1,0 +1,32 @@
+.titulo {
+    display: flexbox;
+    text-align: center;
+    color: var(--color-letrasTabla);
+    border: 2px solid var(--color-fondo);
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    align-items: center;
+    margin: 10px auto;
+    background-color: rgba(243, 233, 230, 0.95);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+.categoria {
+    display: flex;
+    justify-content: center;  
+}
+.categoria select {
+    border-radius: 20px;
+    font-size: 15px;
+    border: 1px solid var(--color-letrasTabla);
+    color: var(--color-letrasTabla);
+    margin-bottom: 20;
+    
+}
+
+.titulo h1 {
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px auto;
+}

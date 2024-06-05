@@ -1,0 +1,53 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background-color: rgba(255, 255, 255, 90%);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    z-index: 1000;
+    text-align: center;
+    border: 2px solid var(--color-letrasLibro);
+    border-radius: 20px;
+  }
+  .modal table {
+    border: 2px solid var(--color-letrasLibro);
+    
+    border-collapse: collapse;
+    
+  }
+  .modal th{
+    border: 2px solid var(--color-letrasLibro);
+ 
+  }
+  .modal td{
+    border: 2px solid var(--color-letrasLibro);
+    
+  }
+  .closeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-letrasLibro);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .closeButton:hover {
+    background-color: var(--color-claroLibro);
+}
+
+ 

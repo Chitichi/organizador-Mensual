@@ -1,0 +1,201 @@
+.titulo {
+    margin: 10px auto;
+    border: 2px solid var(--color-botonOscuro);;
+    border-radius: 20px;
+    width: 90%;
+    background-color: rgba(223, 243, 248, 0.98);
+    color: var(--color-letrasGastos);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+
+
+}
+.tituloDiv {
+    padding: 10px;
+    color: var(--color-botonOscuro);
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    
+}
+.total {
+    color: var(--color-letrasGastos);
+    font-size: 20px;
+
+}
+.imagen {
+    margin-left: 15px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+.imagen:hover {
+    transform: scale(1.2);
+}
+
+.tabla {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(223, 243, 248, 0.98);
+    border: 1px solid;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+
+.tablaTh,
+.tablaTd {
+    padding: 10px;
+    text-align: center;
+    color: var(--color-letrasGastos);
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.tablaTr:last-child {
+    border-bottom: none;
+}
+
+.inputProducto,
+.tablaInputProducto,
+.tablaInputPequeno {
+
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid var(--color-botonOscuro);
+    border-radius: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.botonUno{
+    background-color: var(--color-gastofondo);
+    border: 1px solid var(--color-botonOscuro);
+    color: var(--color-letrasGastos);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+.boton {
+    background-color: var(--color-gastofondo);
+    border: 1px solid var(--color-botonOscuro);
+    color: var(--color-letrasGastos);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 80%;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.botonUno:hover,
+.boton:hover {
+    background-color: var(--color-claro);
+}
+
+
+.tooltip .tooltiptext {
+    font-size: 11px;
+    visibility: hidden;
+    width: auto;
+    max-width: 200px;
+    background-color: white;
+    color: var(--color-letrasGastos);
+    border: 1px solid;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: -110px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--color-letrasGastos);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    white-space: normal;
+}
+
+
+@media (max-width: 1200px) {
+    .tabla {
+        width: 85%;
+    }
+}
+
+@media (max-width: 992px) {
+    .tabla {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabla {
+        width: 95%;
+    }
+    .botonUno,
+    .boton {
+        padding: 8px 16px; 
+       
+    }
+}
+
+@media (max-width: 576px) {
+    .tabla {
+        width: 100%;
+        padding: 5px;
+    }
+
+   
+
+    .botonUno,
+    .boton {
+        padding: 6px 12px; 
+
+    }
+
+    .tablaTh,
+    .tablaTd {
+        padding: 5px; 
+    }
+}

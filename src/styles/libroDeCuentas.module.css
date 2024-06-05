@@ -1,0 +1,224 @@
+.container {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    width: 100%; 
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;  
+    background-color: rgba(255, 255, 255, 90%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-letrasLibro);
+    text-align: center;
+    width: 65%;
+    border: 3px solid var(--color-fondoLibro);
+    border-radius: 20px;
+    padding: 10px;  
+    background-color: rgba(211, 169, 205, 0.8);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    
+}
+.p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-letrasLibro);
+  
+    
+}
+.finTabla{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-letrasLibro);
+    text-align: left;
+    font-weight: 600;
+
+    
+}
+ 
+.movimientos {
+    color: var(--color-letrasLibro);
+
+    margin: 10px 10px;
+    font-weight: 600;
+   
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    gap: 10px;  
+    margin-bottom: 10px;  
+    width: 100%;  
+}
+.tablaTdIngresos {
+    color: green;
+
+}
+.tablaTdGastos {
+    color: red;
+}
+.tabla {
+    padding: 10px;
+    border: 3px solid black;
+    margin: 15px auto;
+    background-color: rgba(211, 169, 205, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;  
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+
+.tabla th,
+.tabla td {
+    word-wrap: break-word;
+    border: 1px solid var(--color-letrasLibro);
+
+}
+.tablaTd, .tablaTh {
+   color: var(--color-letrasLibro);
+}
+
+.ingesosMes {
+    display: flex;
+    align-items: center;
+}
+
+
+.tablaInputSueldo,
+.tablaInputFiltroMes {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;  
+    justify-content: center;
+    
+}
+
+.tablaInputSueldo input,
+.tablaInputFiltroMes select {
+    border: 2px solid var(--color-fondoLibro);
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-letrasLibro);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.boton {
+    background-color: var(--color-claroLibro);
+    border: 1px solid var(--color-claroLibro);
+    color: var(--color-letrasLibro);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.botonDetalles {
+    background-color: var(--color-claroLibro);
+    border: 1px solid var(--color-claroLibro);
+    border: none;
+    color: var(--color-letrasLibro);
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.boton:hover, .botonDetalles:hover {
+    background-color:rgb(233, 219, 231);
+}
+
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .tabla {
+        width: 100%;
+    }
+    .titulo {
+        width: 90%;
+    }
+
+    .tabla th,
+    .tabla td {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .tablaInputSueldo,
+    .tablaInputFiltroMes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .boton {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tabla th, .tabla td {
+        padding: 3px;
+        font-size: 30px;
+    }
+
+    .tablaInputSueldo,
+    .tablaInputFiltroMes {
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 90%; 
+    }
+
+    .tabla th,
+    .tabla td {
+        padding: 15px; 
+        font-size: 20px; 
+    }
+
+    .tablaInputSueldo,
+    .tablaInputFiltroMes {
+        font-size: 22px;  
+    }
+
+    .boton {
+        font-size: 18px;  
+        padding: 12px 24px;  
+    }
+}
+
