@@ -194,11 +194,11 @@ function GastosVariables() {
                                 )}
                                 <tr className={styles.total}>
                                     <td colSpan="2">Total Gastos:</td>
-                                    <td colSpan="2"> ${totalGastosVariables} </td>
+                                    <td colSpan="1"> ${totalGastosVariables} </td>
                                 </tr>
                             </tbody>
                         </table>
-                <button className={styles.boton} onClick={handleGuardarGastos}>Guardar Gastos Variables</button>
+                <button className={styles.boton} onClick={handleGuardarGastos}>Guardar</button>
                     </div>
                 </div>
             </div>

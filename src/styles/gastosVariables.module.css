@@ -150,6 +150,7 @@
     .tabla {
         width: 85%;
     }
+   
 }
 
 @media (max-width: 992px) {
@@ -160,31 +161,66 @@
 
 @media (max-width: 768px) {
     .tabla {
-        width: 95%;
+        width: 90%;
     }
     .botonUno,
     .boton {
-        padding: 8px 16px;
+        padding: 8px 16px; 
        
     }
 }
 
-@media (max-width: 576px) {
-    .tabla {
-        width: 100%;
-        padding: 5px;
+@media (max-width: 480px) {
+    .tituloDiv {
+       
+        width: 90%;
     }
-
-   
-
-    .botonUno,
-    .boton {
-        padding: 6px 12px;
-
+    .tablastyle {
+        width: 90%;
     }
-
-    .tablaTh,
+    .tablaTh{
+  
+        font-size: 10px ;
+    }
+  
     .tablaTd {
-        padding: 5px; 
+        font-size: 8px;  /* Reduce el tamaño de la fuente para ajustar a pantallas muy pequeñas */
+      
+    }
+
+    .inputProducto,
+    .tablaInputProducto,
+    .tablaInputPequeno {
+        font-size: 8px;  /* Mantiene la consistencia del tamaño de fuente en todos los inputs */
+    }
+    .checkboxInput {
+        width: 10px;
+        height: 10px;
+        
+    }
+    
+    .boton {
+        margin: 10px auto;
+        padding: 6px 12px; 
+        width: 30%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
+        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
+        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */ 
+    }
+    .botonUno {
+        
+        width: 50%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
+        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
+        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */ 
+
+    }
+    .total {
+        
+        font-size: 12px;
+    }
+    .titulo
+     {
+        width: 90%;
+        font-size: 10px;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
     }
 }
+
