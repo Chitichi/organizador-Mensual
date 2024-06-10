@@ -39,18 +39,18 @@ body, html {
 /* Media queries para hacer el diseño responsive */
 @media (max-width: 768px) {
     .container {
-        font-size: 60px; /* Reducción de tamaño de fuente para tablets y móviles grandes */
+        font-size: 60px; 
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        font-size: 40px; /* Reducción de tamaño de fuente para móviles pequeños */
+        font-size: 40px; 
     }
 }
 
 @media (min-width: 1024px) {
     .container {
-        font-size: 100px; /* Tamaño de fuente original para pantallas grandes */
+        font-size: 100px; 
     }
 }

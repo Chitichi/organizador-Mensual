@@ -1,12 +1,13 @@
 .titulo {
-    margin: 10px auto;
+    margin: 15px auto;
+    
     border: 2px solid var(--color-botonOscuro);;
     border-radius: 20px;
     width: 80%;
     background-color: rgba(223, 243, 248, 0.98);
     color: var(--color-letrasGastos);
     box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
-    padding: 15px
+    
 
 
 }
@@ -17,7 +18,7 @@
     border-radius: 20px;
     text-align: center;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     
 }
 .total {
@@ -196,14 +197,14 @@
     }
   
     .tablaTd {
-        font-size: 8px;  /* Reduce el tamaño de la fuente para ajustar a pantallas muy pequeñas */
+        font-size: 8px; 
       
     }
 
     .inputProducto,
     .tablaInputProducto,
     .tablaInputPequeno {
-        font-size: 8px;  /* Mantiene la consistencia del tamaño de fuente en todos los inputs */
+        font-size: 8px; 
     }
     .checkboxInput {
         width: 10px;
@@ -214,15 +215,15 @@
     .boton {
         margin: 10px auto;
         padding: 6px 12px; 
-        width: 30%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
-        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
-        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */ 
+        width: 30%;  
+        font-size: 12px;  
+        border-radius: 5px; 
     }
     .botonUno {
         
-        width: 50%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
-        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
-        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */ 
+        width: 50%;  
+        font-size: 12px; 
+        border-radius: 5px;  
 
     }
     .total {
@@ -232,6 +233,6 @@
     .titulo
      {
         width: 90%;
-        font-size: 10px;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
+        font-size: 10px;  
     }
 }

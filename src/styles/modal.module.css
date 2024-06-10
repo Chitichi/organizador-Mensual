@@ -54,16 +54,16 @@
 
 @media (max-width: 480px) {
   .modal {
-      width: 100%; /* Más ancho en dispositivos pequeños para mejor legibilidad */
-      padding: 15px; /* Padding ligeramente menor para maximizar espacio */
+      width: 100%;
+      padding: 15px; 
       font-size: 12px;
   }
   .closeButton {
-      padding: 8px 16px; /* Más pequeño para ajustarse a pantallas más estrechas */
+      padding: 8px 16px; 
   }
 }
 
-/* Estilos para pantallas grandes */
+
 
 
 

@@ -33,14 +33,14 @@
 
 @media (max-width: 768px) {
     .titulo {
-        width: 90%;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
+        width: 90%;  
     }
 }
 
 @media (max-width: 480px) {
     .titulo
      {
-        font-size: 10px;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
+        font-size: 10px; 
         width: 80%;
     }
     .categoria select {

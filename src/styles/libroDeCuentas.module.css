@@ -211,7 +211,7 @@
     .p {
         font-size: 15px;
     }
-    .ingesosMes{ /* Asegúrate de agregar esta clase al div que envuelve tus inputs */
+    .ingesosMes{
         display: flex;
         flex-direction: column;
         

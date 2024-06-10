@@ -206,58 +206,58 @@
     }
 
     .metodoDePago {
-        margin: 10px 0;  /* Asegura un espaciado adecuado entre elementos en vista vertical */
+        margin: 10px 0;  
     }
 
     .titulo,
     .tabla-container, 
     .tabla {
-        width: 100%;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
+        width: 100%; 
     }
 
     .tablaTh, .tablaTd {
-        padding: 5px;  /* Ajusta el padding para no ocupar demasiado espacio */
-        font-size: 12px;  /* Reduce el tamaño de la fuente para mejor legibilidad */
+        padding: 5px; 
+        font-size: 12px; 
     }
 
     .tablaInputProducto,
     .tablaInputPequeno {
-        width: 100%;  /* Asegura que los inputs se ajusten al contenedor */
+        width: 100%;  
     }
 }
 
 @media (max-width: 480px) {
     .boton {
-        width: 70%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
-        padding: 5px;  /* Reduce el padding para hacer los botones más pequeños */
-        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
-        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */
+        width: 70%;  
+        padding: 5px;  
+        font-size: 12px; 
+        border-radius: 5px;  
         
     }
     .titulo
      {
-        font-size: 8px;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
+        font-size: 8px;
     }
-    /* Contenedor de la tabla para desplazamiento horizontal */
+   
     .tabla-container  {
-        overflow-x: auto;  /* Permite el desplazamiento horizontal si es necesario */
+        overflow-x: auto;  
     }
 
     .tablaTh, .tablaTd {
-        padding: 1px;  /* Reduce aún más el padding para maximizar el espacio */
-        font-size: 8px;  /* Reduce el tamaño de la fuente para ajustar a pantallas muy pequeñas */
+        padding: 1px;  
+        font-size: 8px; 
     }
     
     .titulo,
     .tabla-container, 
     .tabla {
-        width: 100%;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
+        width: 100%;  
     }
 
     .inputProducto,
     .tablaInputProducto,
     .tablaInputPequeno {
-        font-size: 8px;  /* Mantiene la consistencia del tamaño de fuente en todos los inputs */
+        font-size: 8px;  
     }
     .checkboxInput {
         width: 10px;
@@ -278,8 +278,6 @@
     }
 }
 
-
-/* Remueve los spinners de los inputs tipo number en Webkit browsers */
 .tablaInputPequeno::-webkit-outer-spin-button,
 .tablaInputPequeno::-webkit-inner-spin-button {
     -webkit-appearance: none;

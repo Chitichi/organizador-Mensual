@@ -65,7 +65,6 @@
     margin: 0;
 }
 
-/* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     .container h1 {
         font-size: 24px;
@@ -74,7 +73,7 @@
     }
 
     .container .imagenes {
-        grid-template-columns: 1fr;  /* Ajusta a una sola columna */
+        grid-template-columns: 1fr;
         width: 90%;
     }
 
@@ -87,7 +86,7 @@
     }
 }
 
-/* Media queries para pantallas muy pequeñas */
+
 @media (max-width: 480px) {
     .container h1 {
         font-size: 20px;
