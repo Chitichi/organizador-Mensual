@@ -8,7 +8,7 @@
     --color-gastofondo: #B6D1E2;
     --color-botonOscuro: #8FBEDC;
     --color-claro: #DFE6EC;
-    --color-letrasGastos:#338FC2;
+    --color-letrasGastos: #338FC2;
     --color-letrasVariables: #608334;
     --color-botonOscuroVar: #A8CA7E;
     --color-gastoClaroVar: #97B770;
@@ -18,17 +18,13 @@
     --color-claroLibro: #b695c0;
     --color-fondoLibro: #dac9df;
     --color-masClaroLibro: #b3a3ba;
-
-
-        
 }
 
 .container {
     padding: 20px;
-   border: 1px solid;
-   font-size: 100px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+    border: 1px solid;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body, html {
@@ -37,4 +33,23 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .container {
+        font-size: 60px; /* Reducción de tamaño de fuente para tablets y móviles grandes */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        font-size: 40px; /* Reducción de tamaño de fuente para móviles pequeños */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        font-size: 100px; /* Tamaño de fuente original para pantallas grandes */
+    }
 }

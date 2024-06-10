@@ -206,48 +206,86 @@
     }
 
     .metodoDePago {
-        margin: 10px 0;
+        margin: 10px 0;  /* Asegura un espaciado adecuado entre elementos en vista vertical */
     }
 
     .titulo,
+    .tabla-container, 
     .tabla {
-        width: 100%;
+        width: 100%;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
     }
 
-    .tablaTh,
-    .tablaTd {
-        padding: 5px;
-        font-size: 12px;
+    .tablaTh, .tablaTd {
+        padding: 5px;  /* Ajusta el padding para no ocupar demasiado espacio */
+        font-size: 12px;  /* Reduce el tamaño de la fuente para mejor legibilidad */
     }
 
     .tablaInputProducto,
     .tablaInputPequeno {
-        width: 100%;
+        width: 100%;  /* Asegura que los inputs se ajusten al contenedor */
     }
 }
 
 @media (max-width: 480px) {
     .boton {
-        width: 100%;
-        padding: 10px;
+        width: 70%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
+        padding: 5px;  /* Reduce el padding para hacer los botones más pequeños */
+        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
+        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */
+        
+    }
+    .titulo
+     {
+        font-size: 8px;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
+    }
+    /* Contenedor de la tabla para desplazamiento horizontal */
+    .tabla-container  {
+        overflow-x: auto;  /* Permite el desplazamiento horizontal si es necesario */
     }
 
     .tablaTh, .tablaTd {
-        padding: 3px;
-        font-size: 10px;
+        padding: 1px;  /* Reduce aún más el padding para maximizar el espacio */
+        font-size: 8px;  /* Reduce el tamaño de la fuente para ajustar a pantallas muy pequeñas */
+    }
+    
+    .titulo,
+    .tabla-container, 
+    .tabla {
+        width: 100%;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
     }
 
     .inputProducto,
     .tablaInputProducto,
     .tablaInputPequeno {
+        font-size: 8px;  /* Mantiene la consistencia del tamaño de fuente en todos los inputs */
+    }
+    .checkboxInput {
+        width: 10px;
+        height: 10px;
+    }
+    .selectBoton {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tablaTdExtra {
+        padding: 10px;
+        text-align: left;
+        color: var(--color-letrasTabla);
+        font-weight: bold;
         font-size: 10px;
     }
 }
 
+
+/* Remueve los spinners de los inputs tipo number en Webkit browsers */
 .tablaInputPequeno::-webkit-outer-spin-button,
 .tablaInputPequeno::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+
 
 

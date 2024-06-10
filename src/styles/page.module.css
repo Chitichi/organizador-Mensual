@@ -1,4 +1,4 @@
-
+/* Estilos base */
 .container h1 {
     font-size: 30px;
     color: var(--letras-color);
@@ -7,29 +7,31 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding: 10px; 
+    padding: 25px; 
     border-radius: 20px;
     margin-top: 15px;
     width: 80%;
-    padding: 25px;
 }
+
 .container h4 {
     text-align: center;
     color: gray;
 }
+
 .container, .derechos {
     text-align: center;
     color: gray;
 }
+
 .container .imagenes {
     width: 80%;
     border: 1px solid var(--letras-color);
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
+    gap: 20px;
     justify-content: center;
-    margin: 20px auto; 
+    margin: 20px auto;
     padding: 25px;
 }
 
@@ -40,24 +42,57 @@
     align-items: center;
     padding: 20px;
     border: 1px solid var(--bordes-color);
-    border-radius: 10px; 
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2); 
-    transition: transform 0.3s; 
-    text-decoration: none; 
-    color: inherit; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
 }
 
 .container .linkItem:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .container .linkItem h3 {
-    margin: 10px 0 0 0; 
-    font-size: 18px; 
-    text-align: center; 
-    color: var(--letras-color)
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    color: var(--letras-color);
 }
 
 .container .imagenes img {
     margin: 0;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 24px;
+        padding: 15px;
+        width: 95%;
+    }
+
+    .container .imagenes {
+        grid-template-columns: 1fr;  /* Ajusta a una sola columna */
+        width: 90%;
+    }
+
+    .container .linkItem {
+        padding: 10px;
+    }
+
+    .container .linkItem h3 {
+        font-size: 16px;
+    }
+}
+
+/* Media queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container .linkItem h3 {
+        font-size: 14px;
+    }
 }
