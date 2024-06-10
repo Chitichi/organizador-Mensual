@@ -21,6 +21,7 @@
 .container, .derechos {
     text-align: center;
     color: gray;
+    width: 100%;
 }
 
 .container .imagenes {

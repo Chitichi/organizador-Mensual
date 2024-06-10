@@ -2,20 +2,22 @@
     margin: 10px auto;
     border: 2px solid var(--color-botonOscuro);;
     border-radius: 20px;
-    width: 90%;
+    width: 95%;
     background-color: rgba(223, 243, 248, 0.98);
     color: var(--color-letrasGastos);
     box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    padding: 15px
 
 
 }
+
 .tituloDiv {
-    padding: 10px;
+    
     color: var(--color-botonOscuro);
     border-radius: 20px;
     text-align: center;
-    width: 90%;
-    margin: 10px auto;
+    width: 80%;
+    margin: auto;
     
 }
 .total {
@@ -33,7 +35,7 @@
 }
 
 .tabla {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     background-color: var(--color-fondo);
     border-radius: 20px;
@@ -46,16 +48,10 @@
     background-color: rgba(223, 243, 248, 0.98);
     border: 1px solid;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    padding: 15px
 }
 
-.tablaTh,
-.tablaTd {
-    padding: 10px;
-    text-align: center;
-    color: var(--color-letrasGastos);
-    font-weight: bold;
-    word-wrap: break-word;
-}
+
 
 .tablaTr:last-child {
     border-bottom: none;
@@ -104,7 +100,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 10px 80%;
+    margin: 0 auto;
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s;
@@ -180,22 +176,52 @@
     }
 }
 
-@media (max-width: 576px) {
-    .tabla {
-        width: 100%;
-        padding: 5px;
+@media (max-width: 480px) {
+    .tituloDiv {
+        margin: auto;
     }
-
-   
-
-    .botonUno,
-    .boton {
-        padding: 6px 12px; 
-
+    .tablaTh{
+  
+        font-size: 8px ;
     }
-
-    .tablaTh,
+  
     .tablaTd {
-        padding: 5px; 
+        font-size: 8px;  /* Reduce el tamaño de la fuente para ajustar a pantallas muy pequeñas */
+      
+    }
+
+    .inputProducto,
+    .tablaInputProducto,
+    .tablaInputPequeno {
+        font-size: 8px;  /* Mantiene la consistencia del tamaño de fuente en todos los inputs */
+    }
+    .checkboxInput {
+        width: 10px;
+        height: 10px;
+        
+    }
+    
+    .boton {
+        margin: 10px auto;
+        padding: 6px 12px; 
+        width: 30%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
+        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
+        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */ 
+    }
+    .botonUno {
+        
+        width: 50%;  /* Los botones ocupan todo el ancho para facilitar la interacción */
+        font-size: 12px;  /* Reduce el tamaño de la fuente de los botones */
+        border-radius: 5px;  /* Hace que los bordes sean menos redondeados */ 
+
+    }
+    .total {
+        color: var(--color-letrasGastos);
+        font-size: 12px;
+    }
+    .titulo
+     {
+        width: 90%;
+        font-size: 8px;  /* Utiliza todo el ancho disponible en dispositivos más pequeños */
     }
 }

@@ -11,10 +11,9 @@ function gastos(){
           <div className={styles.imagenes}>
          <Link href="/gastosFijos" legacyBehavior>
         <a className={styles.linkItem}>
-          <Image
+          <img
             priority={true}
             width={64}
-            height={64}
             src="https://img.icons8.com/dusk/64/cash.png"
             alt="gastos-fijos"
           />

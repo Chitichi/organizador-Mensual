@@ -7,6 +7,9 @@
     padding: 10px; 
     border-radius: 20px;
     margin-top: 15px;
+    border: 1px solid var(--letras-color);
+    width: 90%;
+    margin: 10px auto;
 }
 
 .container .imagenes {
@@ -14,7 +17,7 @@
     border: 1px solid var(--letras-color);
     border-radius: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px; 
     justify-content: center;
     margin: 20px auto;
@@ -48,4 +51,15 @@
 
 .container .imagenes img {
     margin: 0;
+}
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container .linkItem h3 {
+        font-size: 14px;
+    }
+   
+   
 }
