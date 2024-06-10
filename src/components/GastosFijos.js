@@ -129,7 +129,7 @@ function GastosFijos() {
     };
 
     return (
-        <div className={styles.fondoGastos}>
+        <div>
             <div className={styles.tituloDiv}>
                 <div className={styles.titulo}>
                     <h1>Gastos Fijos</h1>
@@ -137,7 +137,7 @@ function GastosFijos() {
                 <div>
                     <button className={styles.botonUno} onClick={handleAgregarProducto}>Agregar Gasto Fijo</button>
                     <div className={styles.tabla}>
-                        <div className={styles.tablastyle}>
+                        <div >
                             <table>
                                 <thead>
                                     <tr>
