@@ -215,7 +215,9 @@
         display: flex;
         flex-direction: column;
         
-        
+    }
+    .tablaInputSueldo input {
+        width: 80px;
     }
 }
 
