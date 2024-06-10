@@ -50,4 +50,21 @@
     background-color: var(--color-claroLibro);
 }
 
+  
+
+@media (max-width: 480px) {
+  .modal {
+      width: 100%; /* Más ancho en dispositivos pequeños para mejor legibilidad */
+      padding: 15px; /* Padding ligeramente menor para maximizar espacio */
+      font-size: 12px;
+  }
+  .closeButton {
+      padding: 8px 16px; /* Más pequeño para ajustarse a pantallas más estrechas */
+  }
+}
+
+/* Estilos para pantallas grandes */
+
+
+
  

@@ -180,18 +180,42 @@
 }
 
 @media (max-width: 480px) {
+    .container {
+        margin: auto;
+        width: 90%;
+    }
+    .titulo {
+        font-size: 12px;
+    }
+    .tabla {
+        margin: 0 auto;
+        
+    }
     .boton {
         width: 100%;
-        padding: 10px;
     }
-
+    .botonDetalles {
+        font-size: 12px;
+        
+    }
     .tabla th, .tabla td {
-        padding: 4px;  /* Más reducido para pantallas muy pequeñas */
-        font-size: 12px; /* Tamaño de fuente aún más pequeño para mejorar la legibilidad */
+        font-size: 10px;
     }
 
-    .tablaInputSueldo, .tablaInputFiltroMes {
-        font-size: 12px;  /* Ajustado para ser legible */
+    .tablaInputFiltroMes {
+        
+        font-size: 12px;
+       
+    }
+    
+    .p {
+        font-size: 15px;
+    }
+    .ingesosMes{ /* Asegúrate de agregar esta clase al div que envuelve tus inputs */
+        display: flex;
+        flex-direction: column;
+        
+        
     }
 }
 
