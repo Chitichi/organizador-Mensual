@@ -2,10 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from '../styles/page.module.css';
+import MensualBot from "@/components/MensualBot";
 
 export default function Page() {
   return (
     <main className={styles.container}>
+
     <div >
       <h1>Mi organizador Mensual</h1>
       <div className={styles.imagenes}>
@@ -46,11 +48,12 @@ export default function Page() {
           <h3>Libro de Cuentas</h3>
         </a>
       </Link>
-      </div>
+      </div> 
     </div>   
     <h4 > © 2024 Giuliana Vazquez. Todos los derechos reservados.</h4>
     <a className={styles.derechos} href="https://icons8.com/icon/84717/venta-tienda-financiamiento-finanzas-pago-de-dinero-compras-10"></a> icon by <a href="https://icons8.com">Icons8</a>
- 
+    <MensualBot/>
+   
     </main>
   );
 }
