@@ -10,7 +10,8 @@ const MensualBot = () => {
     script.async = true;
     script.onload = function() {
       window.voiceflow.chat.load({
-        verify: { projectID: process.env.NEXT_PUBLIC_MENSUAL_BOT_ID },
+        verify: { 
+        projectID: process.env.NEXT_PUBLIC_MENSUAL_BOT_ID },
         url: 'https://general-runtime.voiceflow.com',
         versionID: 'production'
       });
