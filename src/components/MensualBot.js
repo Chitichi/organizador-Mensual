@@ -12,7 +12,7 @@ const MensualBot = () => {
       window.voiceflow.chat.load({
         verify: { projectID: process.env.NEXT_PUBLIC_MENSUAL_BOT_ID },
         url: 'https://general-runtime.voiceflow.com',
-        versionID: 'development'
+        versionID: 'production'
       });
     };
 
