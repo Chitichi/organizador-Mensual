@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/libroDeCuentas.module.css';
+import styles from '@/styles/libroDeCuentas.module.css'
 import CustomModal from './CustomModal';
 
 function LibroDeCuentas() {
